@@ -9,14 +9,32 @@
 #import "HelloUserViewController.h"
 
 @implementation HelloUserViewController
+@synthesize helloLabel, nameField;
 
 - (void) sayHello: (id) sender {
 	NSString *userName = nameField.text;
 	NSString *helloMessage = [[NSString alloc] initWithFormat: @"Hello %@", userName];
 	helloLabel.text = helloMessage;
 	[helloMessage release];
+	[nameField resignFirstResponder];
 	nameField.text = NULL;
+
 }
+
+- (void) modifyHello: (id) sender {
+	NSString *userName = nameField.text;
+	NSString *helloMessage = [[NSString alloc] initWithFormat: @"Hello %@", userName];
+	helloLabel.text = helloMessage;
+	[helloMessage release];
+	//nameField.text = NULL;
+	//[nameField resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	[textField resignFirstResponder];
+	return YES;
+}
+
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -65,6 +83,8 @@
 
 
 - (void)dealloc {
+	[helloLabel release];
+	[nameField release];
     [super dealloc];
 }
 
