@@ -7,12 +7,13 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -20,6 +21,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = HelloUser;
+		savedGlobals = {
+		};
 		sourceDirectories = (
 		);
 	};
@@ -34,16 +37,40 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	179F18231070B76700147D7B /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* HelloUserViewController.h */;
+	};
+	179F18241070B76700147D7B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* HelloUserViewController.h */;
+		name = "HelloUserViewController.h: 22";
+		rLen = 0;
+		rLoc = 353;
+		rType = 0;
+		vrLen = 353;
+		vrLoc = 0;
+	};
 	1D6058900D05DD3D006BFB54 /* HelloUser */ = {
 		activeExec = 0;
 		executables = (
 			179F18001070B2E000147D7B /* HelloUser */,
 		);
 	};
+	28D7ACF60DDB3853001CB0EB /* HelloUserViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1110, 607}}";
+			sepNavSelRange = "{353, 0}";
+			sepNavVisRange = "{0, 353}";
+			sepNavWindowFrame = "{{19, 315}, {750, 558}}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 179F18001070B2E000147D7B /* HelloUser */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* HelloUser */;
+		breakpoints = (
+		);
 		codeSenseManager = 179F18161070B2E800147D7B /* Code sense */;
 		executables = (
 			179F18001070B2E000147D7B /* HelloUser */,
@@ -54,7 +81,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					989,
+					932,
 					20,
 					48.16259765625,
 					43,
@@ -71,8 +98,12 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 275821280;
-			PBXWorkspaceStateSaveDate = 275821280;
+			PBXPerProjectTemplateStateSaveDate = 275822454;
+			PBXWorkspaceStateSaveDate = 275822454;
+		};
+		perUserProjectItems = {
+			179F18231070B76700147D7B = 179F18231070B76700147D7B /* PBXBookmark */;
+			179F18241070B76700147D7B = 179F18241070B76700147D7B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 179F18151070B2E800147D7B /* Source Control */;
 		userBuildSettings = {
